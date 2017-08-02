@@ -20,7 +20,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         //Set a click listener on the family view
         family.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
                 startActivity(familyIntent);
             }
@@ -63,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         //Set a click listener on the colors view
         colors.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
                 startActivity(colorsIntent);
             }
@@ -76,12 +79,11 @@ public class MainActivity extends AppCompatActivity {
         //Set a click listener on the phrases view
         phrases.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
                 startActivity(phrasesIntent);
             }
         });
-
 
     }
 
