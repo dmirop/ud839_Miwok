@@ -27,6 +27,8 @@ package com.example.android.miwok;
 
 public class ColorsActivity extends AppCompatActivity {
 
+    private MediaPlayer mMediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +53,7 @@ public class ColorsActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                MediaPlayer mMediaPlayer = MediaPlayer.create(ColorsActivity.this,words.get(i).getmAudioResourceId());
+                mMediaPlayer = MediaPlayer.create(ColorsActivity.this,words.get(i).getmAudioResourceId());
                 mMediaPlayer.start();
             }
         });

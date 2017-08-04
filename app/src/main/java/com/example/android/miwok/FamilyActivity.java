@@ -26,6 +26,8 @@ import java.util.ArrayList;
 
 public class FamilyActivity extends AppCompatActivity {
 
+    private MediaPlayer mMediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +54,7 @@ public class FamilyActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                MediaPlayer mMediaPlayer = MediaPlayer.create(FamilyActivity.this,words.get(i).getmAudioResourceId());
+                mMediaPlayer = MediaPlayer.create(FamilyActivity.this,words.get(i).getmAudioResourceId());
                 mMediaPlayer.start();
             }
         });
