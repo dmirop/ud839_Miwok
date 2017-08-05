@@ -32,6 +32,13 @@
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
 
+    <style name="TabStyle" parent="Widget.Design.TabLayout">
+        <item name="android:background">#4A312A</item>
+        <item name="tabIndicatorColor">#FFFFFF</item>
+        <item name="tabSelectedTextColor">#FFFFFF</item>
+        <item name="tabTextColor">#A8A19E</item>
+    </style>
+
     <style name="ListStyle">
         <item name="android:height">88dp</item>
 
